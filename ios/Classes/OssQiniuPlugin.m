@@ -15,19 +15,18 @@
     if ([@"upload" isEqualToString:call.method]) {
         NSDictionary *argsMap = call.arguments;
         NSString *filePath = argsMap[@"path"];
+        NSString *key = argsMap[@"key"];
         NSString *token = argsMap[@"token"];
         QNConfiguration *config =[QNConfiguration build:^(QNConfigurationBuilder *builder) {
             NSMutableArray *array = [[NSMutableArray alloc] init];
         }];
         QNUploadManager *upManager = [[QNUploadManager alloc] initWithConfiguration:config];
-        [upManager putFile:filePath key:nil token:token complete:^(QNResponseInfo *info, NSString *key, NSDictionary *resp) {
+        [upManager putFile:filePath key:key token:token complete:^(QNResponseInfo *info, NSString *key, NSDictionary *resp) {
             if(info.ok) {
-                result(@"成功");
+                result(resp[@"key"]);
             } else {
-                result(@"失败");
+                result(@"");
             }
-            NSLog(@"info ===== %@", info);
-            NSLog(@"resp ===== %@", resp);
         } option:nil];
     } else {
         result(FlutterMethodNotImplemented);

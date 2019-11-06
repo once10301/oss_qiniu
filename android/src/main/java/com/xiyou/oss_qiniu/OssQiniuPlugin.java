@@ -1,11 +1,10 @@
 package com.xiyou.oss_qiniu;
 
-import android.util.Log;
-
 import com.qiniu.android.http.ResponseInfo;
 import com.qiniu.android.storage.UpCompletionHandler;
 import com.qiniu.android.storage.UploadManager;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import io.flutter.plugin.common.MethodCall;
@@ -33,27 +32,30 @@ public class OssQiniuPlugin implements MethodCallHandler {
         this.result = result;
         if (call.method.equals("upload")) {
             String path = call.argument("path");
+            String key = call.argument("key");
             String token = call.argument("token");
-            upload(path, token);
+            upload(path, key, token);
         } else {
             result.notImplemented();
         }
     }
 
-    public void upload(String path, String token) {
+    public void upload(String path, String key, String token) {
         UploadManager uploadManager = new UploadManager();
-        uploadManager.put(path, null, token, new UpCompletionHandler() {
+        uploadManager.put(path, key, token, new UpCompletionHandler() {
             @Override
             public void complete(String key, ResponseInfo info, JSONObject res) {
                 //res包含hash、key等信息，具体字段取决于上传策略的设置
                 if (info.isOK()) {
-                    result.success(res.toString());
-                    Log.i("qiniu", "Upload Success" + res.toString());
+                    try {
+                        result.success(res.get("key"));
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                        result.success("");
+                    }
                 } else {
-                    Log.i("qiniu", "Upload Fail");
-                    //如果失败，这里可以把info信息上报自己的服务器，便于后面分析上传错误原因
+                    result.success("");
                 }
-                Log.i("qiniu", key + ",\r\n " + info + ",\r\n " + res);
             }
         }, null);
     }
