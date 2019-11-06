@@ -1,0 +1,29 @@
+PODS:
+  - Flutter (1.0.0)
+  - oss_qiniu (0.0.1):
+    - Flutter
+    - Qiniu
+  - Qiniu (7.2.6)
+
+DEPENDENCIES:
+  - Flutter (from `.symlinks/flutter/ios`)
+  - oss_qiniu (from `.symlinks/plugins/oss_qiniu/ios`)
+
+SPEC REPOS:
+  trunk:
+    - Qiniu
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: ".symlinks/flutter/ios"
+  oss_qiniu:
+    :path: ".symlinks/plugins/oss_qiniu/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  oss_qiniu: e74a2021b0ec15653f69bbcbf7e799554cc99cfa
+  Qiniu: 9d1f20dcc348919972b4ee1b1272f9b9d4a7e69e
+
+PODFILE CHECKSUM: 7fb83752f59ead6285236625b82473f90b1cb932
+
+COCOAPODS: 1.8.4
