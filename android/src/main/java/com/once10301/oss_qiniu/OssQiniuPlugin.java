@@ -1,7 +1,6 @@
 package com.once10301.oss_qiniu;
 
 import android.app.Activity;
-import android.content.Context;
 
 import androidx.annotation.NonNull;
 
@@ -16,19 +15,19 @@ import java.util.HashMap;
 import java.util.Map;
 
 import io.flutter.embedding.engine.plugins.FlutterPlugin;
+import io.flutter.embedding.engine.plugins.activity.ActivityAware;
+import io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding;
 import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
 import io.flutter.plugin.common.MethodChannel.Result;
 
-public class OssQiniuPlugin implements FlutterPlugin, MethodCallHandler {
-    private Context context;
-    private MethodChannel channel;
+public class OssQiniuPlugin implements FlutterPlugin, MethodCallHandler, ActivityAware {
+    private Activity activity;
 
     @Override
     public void onAttachedToEngine(@NonNull FlutterPluginBinding flutterPluginBinding) {
-        context = flutterPluginBinding.getApplicationContext();
-        channel = new MethodChannel(flutterPluginBinding.getBinaryMessenger(), "oss_qiniu");
+        MethodChannel channel = new MethodChannel(flutterPluginBinding.getBinaryMessenger(), "oss_qiniu");
         channel.setMethodCallHandler(this);
     }
 
@@ -43,7 +42,7 @@ public class OssQiniuPlugin implements FlutterPlugin, MethodCallHandler {
                 @Override
                 public void complete(String key, final ResponseInfo info, final JSONObject res) {
                     //res包含hash、key等信息，具体字段取决于上传策略的设置
-                    ((Activity) context).runOnUiThread(new Runnable() {
+                    activity.runOnUiThread(new Runnable() {
                         public void run() {
                             Map<String, Object> map = new HashMap<>();
                             if (info.isOK()) {
@@ -70,6 +69,26 @@ public class OssQiniuPlugin implements FlutterPlugin, MethodCallHandler {
 
     @Override
     public void onDetachedFromEngine(@NonNull FlutterPluginBinding binding) {
-        channel.setMethodCallHandler(null);
+
+    }
+
+    @Override
+    public void onAttachedToActivity(@NonNull ActivityPluginBinding binding) {
+        activity = binding.getActivity();
+    }
+
+    @Override
+    public void onDetachedFromActivityForConfigChanges() {
+
+    }
+
+    @Override
+    public void onReattachedToActivityForConfigChanges(@NonNull ActivityPluginBinding binding) {
+
+    }
+
+    @Override
+    public void onDetachedFromActivity() {
+
     }
 }
