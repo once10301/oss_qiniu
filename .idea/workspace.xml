@@ -1,43 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4453b1ed-52b1-470e-8b45-a24b53cf634a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/xiyou/oss_qiniu/OssQiniuPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/xiyou/oss_qiniu/OssQiniuPlugin.java" afterDir="false" />
-    </list>
+    <list default="true" id="1848d883-f367-4fc4-8798-9d5d29cc04df" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="67" />
-    <option name="y" value="74" />
-    <option name="width" value="1280" />
-    <option name="height" value="709" />
-  </component>
-  <component name="ProjectId" id="1m2MRRBuEPuRYlMlY5iOURLEU9E" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[2337349]" />
+  <component name="ProjectId" id="1m2UEB8ccCyuf31X7KoLCxoNTEo" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="dart.analysis.tool.window.force.activate" value="false" />
+    <property name="dart.analysis.tool.window.force.activate" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="flutter.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="SvnConfiguration">
@@ -45,34 +24,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4453b1ed-52b1-470e-8b45-a24b53cf634a" name="Default Changelist" comment="" />
-      <created>1573032003540</created>
+      <changelist id="1848d883-f367-4fc4-8798-9d5d29cc04df" name="Default Changelist" comment="" />
+      <created>1608691065548</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1573032003540</updated>
+      <updated>1608691065548</updated>
     </task>
     <servers />
-  </component>
-  <component name="WindowStateProjectService">
-    <state width="1419" height="375" key="GridCell.Tab.0.bottom" timestamp="1608688651421">
-      <screen x="-1060" y="-1417" width="3440" height="1417" />
-    </state>
-    <state width="1419" height="375" key="GridCell.Tab.0.bottom/0.23.1280.709/-1060.-1417.3440.1417@-1060.-1417.3440.1417" timestamp="1608688651421" />
-    <state width="1419" height="375" key="GridCell.Tab.0.center" timestamp="1608688651420">
-      <screen x="-1060" y="-1417" width="3440" height="1417" />
-    </state>
-    <state width="1419" height="375" key="GridCell.Tab.0.center/0.23.1280.709/-1060.-1417.3440.1417@-1060.-1417.3440.1417" timestamp="1608688651420" />
-    <state width="1419" height="375" key="GridCell.Tab.0.left" timestamp="1608688651420">
-      <screen x="-1060" y="-1417" width="3440" height="1417" />
-    </state>
-    <state width="1419" height="375" key="GridCell.Tab.0.left/0.23.1280.709/-1060.-1417.3440.1417@-1060.-1417.3440.1417" timestamp="1608688651420" />
-    <state width="1419" height="375" key="GridCell.Tab.0.right" timestamp="1608688651420">
-      <screen x="-1060" y="-1417" width="3440" height="1417" />
-    </state>
-    <state width="1419" height="375" key="GridCell.Tab.0.right/0.23.1280.709/-1060.-1417.3440.1417@-1060.-1417.3440.1417" timestamp="1608688651420" />
-    <state x="354" y="-1157" key="SettingsEditor" timestamp="1608687244429">
-      <screen x="-1060" y="-1417" width="3440" height="1417" />
-    </state>
-    <state x="354" y="-1157" key="SettingsEditor/0.23.1280.709/-1060.-1417.3440.1417@-1060.-1417.3440.1417" timestamp="1608687244429" />
   </component>
 </project>
