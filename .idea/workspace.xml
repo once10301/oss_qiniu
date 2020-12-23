@@ -21,7 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1848d883-f367-4fc4-8798-9d5d29cc04df" name="Default Changelist" comment=".">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/oss_qiniu.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/oss_qiniu.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,7 +28,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[2337349]" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -68,7 +66,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608698336273</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary=".">
+      <created>1608709979900</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1608709979901</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -96,9 +101,9 @@
       <screen x="-1060" y="-1417" width="3440" height="1417" />
     </state>
     <state x="-463" y="-1157" key="SettingsEditor/0.23.1280.709/-1060.-1417.3440.1417@-1060.-1417.3440.1417" timestamp="1608709842374" />
-    <state x="-481" y="-1032" key="Vcs.Push.Dialog.v2" timestamp="1608698346223">
+    <state x="-481" y="-1032" key="Vcs.Push.Dialog.v2" timestamp="1608709983745">
       <screen x="-1060" y="-1417" width="3440" height="1417" />
     </state>
-    <state x="-481" y="-1032" key="Vcs.Push.Dialog.v2/0.23.1280.709/-1060.-1417.3440.1417@-1060.-1417.3440.1417" timestamp="1608698346223" />
+    <state x="-481" y="-1032" key="Vcs.Push.Dialog.v2/0.23.1280.709/-1060.-1417.3440.1417@-1060.-1417.3440.1417" timestamp="1608709983745" />
   </component>
 </project>
